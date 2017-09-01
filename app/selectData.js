@@ -9,7 +9,7 @@ client().then(sess => {
 		if (!!err) {
 			return console.log("query err: %j", err.message || err);
 		}
-		return console.log("response: %j", response);
+		return console.log(response);
 	});
 }).catch(err => {
 	return console.log("err: %j", err.message || err);
