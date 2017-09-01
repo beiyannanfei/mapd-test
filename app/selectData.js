@@ -9,7 +9,8 @@ client().then(sess => {
 		if (!!err) {
 			return console.log("query err: %j", err.message || err);
 		}
-		return console.log(response);
+		console.log(response[0].number);
+		return console.log(parseInt(response[0].number));
 	});
 }).catch(err => {
 	return console.log("err: %j", err.message || err);
