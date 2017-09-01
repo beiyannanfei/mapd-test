@@ -4,7 +4,7 @@
 const client = require("./index");
 
 client().then(sess => {
-	let sqlStr = 'insert into wifipix values (118.804220692905,	32.0403826300024, 109);';
+	let sqlStr = 'insert into wifipix values (90.804220692905,	40.0403826300024, 32);';
 	sess.query(sqlStr, {}, (err, response) => {
 		if (!!err) {
 			return console.log("query err: %j", err.message || err);
